@@ -314,7 +314,29 @@ body.dark-mode .back-to-top { color: #103b70; background: #80b8ee; box-shadow: 0
 @media (prefers-reduced-motion: reduce) {
   body, body * { transition-duration: .01ms !important; }
 }
+/* Responsive skills layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.skill-grid-item { min-width: 0; }
+.productivity-card { grid-column: 2; }
+
+/* Shared responsive refinements */
+img { max-width: 100%; }
+.project-body { min-width: 0; }
+.project-body h3, .skill-card h3, .navbar-brand { overflow-wrap: anywhere; }
+.project-footer { gap: 10px; flex-wrap: wrap; }
+.contact-actions { flex-wrap: wrap; }
+
 @media (max-width: 991.98px) {
+  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .productivity-card { grid-column: 1 / -1; width: calc(50% - .5rem); justify-self: center; }
+  .hero-section h1 { font-size: clamp(3rem, 9vw, 4.5rem); }
+  .hero-section .hero-actions { flex-wrap: wrap; }
+  .profile-wrap { margin-left: auto; margin-right: auto; }
+
   .navbar-collapse { padding: 15px 0 5px; }
   .nav-link { padding: 8px 0 !important; }
   .hero-section { padding-top: 125px; }
@@ -322,6 +344,23 @@ body.dark-mode .back-to-top { color: #103b70; background: #80b8ee; box-shadow: 0
   .profile-wrap { margin-top: 10px; }
   .badge-code { left: -4px; }.badge-db { right: -4px; }
   .contact-panel { padding: 42px; }
+}
+@media (max-width: 767.98px) {
+  .skills-grid { grid-template-columns: 1fr; }
+  .productivity-card { grid-column: 1; width: 100%; }
+  .skill-card { padding: 23px; }
+  .skill-card p { min-height: 0; }
+  .hero-meta { grid-template-columns: 1fr; }
+  .hero-section .row { row-gap: 48px; }
+  .hero-actions { width: 100%; }
+  .hero-actions .btn { width: 100%; }
+  .profile-wrap { width: min(100%, 400px); }
+  .project-visual { height: 190px; }
+  .mock-window { width: min(76%, 340px); }
+  .navbar-brand { font-size: .96rem; }
+  .navbar-collapse { background: rgba(255,255,255,.98); border-radius: 12px; padding: 10px 14px 12px !important; margin-top: 8px; box-shadow: 0 12px 30px rgba(16,59,112,.08); }
+  .navbar-collapse .nav-link { padding-left: 10px !important; }
+  body.dark-mode .navbar-collapse { background: rgba(34,50,71,.98); }
 }
 @media (max-width: 575.98px) {
   .hero-section { padding: 115px 0 85px; min-height: 0; }

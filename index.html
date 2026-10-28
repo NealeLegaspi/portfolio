@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio of Neale D. Legaspi, BSIT graduate, programmer, and IT support candidate.">
-  <title>Neale D. Legaspi | IT Portfolio</title>
+  <title>Neale D. Legaspi - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true" tabindex="0">
   <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home"><span class="brand-mark">N</span> Neale Legaspi<span class="brand-dot">.</span></a>
+      <a class="navbar-brand fw-bold" href="#home"><span class="brand-mark">N</span> Neale D. Legaspi</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,6 +27,11 @@
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark color mode" title="Switch to dark mode">
+              <span class="theme-toggle-track"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></span>
+            </button>
+          </li>
           <li class="nav-item ms-lg-2"><a class="btn btn-primary btn-sm px-3" href="#contact">Contact Me</a></li>
         </ul>
       </div>
@@ -42,29 +47,37 @@
             <div class="eyebrow"><span class="status-dot"></span> OPEN TO ENTRY-LEVEL OPPORTUNITIES</div>
             <p class="intro-label mb-2">Hello, I'm</p>
             <h1>Neale D.<br><span>Legaspi</span></h1>
-            <h2 class="hero-subtitle">Aspiring IT Professional <span class="divider-line">|</span> Programmer</h2>
-            <p class="hero-copy">A Bachelor of Science in Information Technology graduate with experience in systems development, database management, and IT support. I enjoy building practical solutions and learning technologies that make everyday work easier.</p>
+            <h2 class="hero-subtitle">Aspiring IT Professional <span class="divider-line">|</span> Programmer <span class="divider-line">|</span> IT Support Candidate</h2>
+            <p class="hero-copy">A Bachelor of Science in Information Technology graduate with experience in systems development, database work, and technical support. I enjoy building practical solutions, improving digital workflows, and supporting teams with reliable technology.</p>
             <div class="d-flex flex-wrap gap-3 mt-4">
-              <a class="btn btn-primary btn-lg" href="#projects">Explore My Work <i class="bi bi-arrow-right ms-1"></i></a>
-              <a class="btn btn-outline-primary btn-lg" href="assets/Neale-Legaspi-Resume.pdf" target="_blank" rel="noopener">View Resume <i class="bi bi-file-earmark-pdf ms-1"></i></a>
+              <a class="btn btn-primary btn-lg" href="#projects">View My Projects</a>
             </div>
             <div class="hero-social mt-4">
               <span><i class="bi bi-geo-alt"></i> Bulakan, Bulacan, Philippines</span>
-              <a href="mailto:legaspi.neale@gmail.com"><i class="bi bi-envelope"></i> Email me</a>
+            </div>
+            <div class="hero-meta mt-4">
+              <div class="meta-item">
+                <span class="meta-label">Education</span>
+                <strong>BSIT Graduate</strong>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Focus</span>
+                <strong>Programming & Support</strong>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Status</span>
+                <strong>Open to opportunities</strong>
+              </div>
             </div>
           </div>
           <div class="col-lg-5">
             <div class="profile-wrap mx-auto">
               <div class="profile-backdrop"></div>
               <div class="profile-card">
-                <div class="profile-avatar" aria-label="Profile photo placeholder">
-                  <span>NL</span><div class="avatar-camera"><i class="bi bi-person-fill"></i></div>
+                <div class="profile-avatar" aria-label="Neale D. Legaspi profile photo">
+                  <img src="assets/Picture.jpg" alt="Neale D. Legaspi" loading="eager">
                 </div>
-                <span class="profile-caption">PROFILE PHOTO PLACEHOLDER</span>
-                <h3>Neale D. Legaspi</h3>
-                <p>BS Information Technology</p>
                 <div class="profile-tags"><span>Developer</span><span>Problem Solver</span><span>IT Support</span></div>
-                <div class="profile-bottom"><span><i class="bi bi-code-slash"></i> Building & learning</span><span class="mini-status">Available</span></div>
               </div>
               <div class="floating-badge badge-code"><i class="bi bi-code-square"></i><span>Web Development</span></div>
               <div class="floating-badge badge-db"><i class="bi bi-database"></i><span>Database Systems</span></div>
@@ -86,22 +99,17 @@
           <div class="col-lg-7">
             <div class="content-card h-100">
               <h3 class="card-title"><i class="bi bi-person-lines-fill"></i> My Background</h3>
-              <p>I am a BSIT graduate from STI College Balagtas and a former IT Intern at the Municipality of Bulakan. My experience includes contributing to application development as a Lead Programmer, working with databases, assisting with information systems, and supporting workplace technology needs.</p>
-              <p>I aim to keep improving my technical skills while contributing to a team that values dependable systems, clear communication, and continuous learning.</p>
-              <div class="about-facts">
-                <div><span class="fact-label">Education</span><strong>BS Information Technology</strong><small>STI College Balagtas · 2022–2026</small></div>
-                <div><span class="fact-label">Based in</span><strong>Bulakan, Bulacan</strong><small>Philippines</small></div>
-              </div>
+              <p>I am a BSIT graduate from STI College Balagtas with hands-on exposure to application development, database work, and support tasks in a professional environment. My experience includes working on system workflows, maintaining data integrity, and helping improve day-to-day technology operations.</p>
+              <p>I aim to keep growing as a developer and IT support professional by contributing to dependable systems, thoughtful problem-solving, and collaborative teamwork.</p>
             </div>
           </div>
           <div class="col-lg-5">
             <div class="content-card h-100 highlight-card">
-              <h3 class="card-title"><i class="bi bi-bullseye"></i> Career Objective</h3>
-              <p>To start my career in IT by applying my knowledge of programming, database management, and technical troubleshooting while supporting the development and maintenance of useful technology solutions.</p>
+              <h3 class="card-title"><i class="bi bi-bullseye"></i> Professional Interests</h3>
               <div class="objective-list">
-                <div><i class="bi bi-check-circle-fill"></i><span>Build practical, user-focused applications</span></div>
-                <div><i class="bi bi-check-circle-fill"></i><span>Keep learning development and IT operations</span></div>
-                <div><i class="bi bi-check-circle-fill"></i><span>Contribute reliably to a technical team</span></div>
+                <div><i class="bi bi-check-circle-fill"></i><span>Web and application development</span></div>
+                <div><i class="bi bi-check-circle-fill"></i><span>Database management and system workflows</span></div>
+                <div><i class="bi bi-check-circle-fill"></i><span>IT support, troubleshooting, and user-focused solutions</span></div>
               </div>
             </div>
           </div>
@@ -117,12 +125,12 @@
           <p>Technologies and tools listed in my resume.</p>
         </div>
         <div class="row g-3">
-          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-window"></i></div><h3>Web Development</h3><p>HTML5, CSS3, Bootstrap, JavaScript, PHP (Laravel)</p><div class="skill-chips"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span><span>Laravel</span></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-braces"></i></div><h3>Programming</h3><p>Programming languages used in coursework and projects.</p><div class="skill-chips"><span>C#</span><span>Java</span><span>PHP</span><span>Python</span></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-database"></i></div><h3>Database Management</h3><p>Relational database design and data management.</p><div class="skill-chips"><span>MySQL</span><span>Microsoft SQL Server</span></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-git"></i></div><h3>Developer Tools</h3><p>Tools for writing, managing, and maintaining code.</p><div class="skill-chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Visual Studio</span></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-pc-display"></i></div><h3>IT Operations</h3><p>Basic support and troubleshooting for computers and software.</p><div class="skill-chips"><span>Hardware</span><span>Networking Basics</span><span>Software Setup</span></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-people"></i></div><h3>Productivity & Collaboration</h3><p>Office productivity, basic design, and AI-assisted development tools.</p><div class="skill-chips"><span>MS Office</span><span>Canva</span><span>AI Tools</span></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-window"></i></div><h3>Web Development</h3><p>Front-end and application development using practical web tools.</p><div class="skill-chips"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span><span>Laravel</span></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-braces"></i></div><h3>Programming</h3><p>Core programming concepts applied in coursework and project work.</p><div class="skill-chips"><span>C#</span><span>Java</span><span>PHP</span><span>Python</span></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-database"></i></div><h3>Database Management</h3><p>Designing and maintaining relational data structures for everyday operations.</p><div class="skill-chips"><span>MySQL</span><span>Microsoft SQL Server</span></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-git"></i></div><h3>Developer Tools</h3><p>Version control and coding workflows used to build and manage systems.</p><div class="skill-chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Visual Studio</span></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-pc-display"></i></div><h3>IT Operations</h3><p>Setup, troubleshooting, and maintaining computers and software.</p><div class="skill-chips"><span>Hardware</span><span>Networking Basics</span><span>Software Setup</span></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="skill-card"><div class="skill-icon"><i class="bi bi-people"></i></div><h3>Productivity & Collaboration</h3><p>Documentation, communication, and workflow support in shared environments.</p><div class="skill-chips"><span>MS Office</span><span>Canva</span><span>AI Tools</span></div></div></div>
         </div>
       </div>
     </section>
@@ -137,18 +145,17 @@
         <div class="row g-4">
           <div class="col-lg-4"><article class="project-card h-100">
             <div class="project-visual mindware-visual"><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i><span>Mind-SYS</span></div><div class="mock-body"><div class="mock-sidebar"></div><div class="mock-content"><div class="mock-title"></div><div class="mock-stat-row"><b></b><b></b><b></b></div><div class="mock-table"><i></i><i></i><i></i><i></i></div></div></div></div><span class="project-type">WEB SYSTEM</span></div>
-            <div class="project-body"><span class="project-number">PROJECT 01</span><h3>Mind-SYS</h3><p class="project-subtitle">Student Information System and Records</p><p>Designed and developed a centralized school records system to support student enrollment workflows, record tracking, and faster data retrieval for Children’s Mindware Inc.</p><div class="project-tech"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div><div class="project-footer"><span><i class="bi bi-person-badge"></i> Lead Programmer</span><span class="text-muted small">Capstone Project</span></div></div>
+            <div class="project-body"><span class="project-number">PROJECT 01</span><h3>Mind-SYS</h3><p class="project-subtitle">Student Information and Records Management</p><p>Developed a centralized records system to improve student information handling, enrollment workflows, and faster data retrieval for Children’s Mindware Inc. I contributed to the system design, logic, and database structure using Laravel, PHP, MySQL, and Bootstrap.</p><div class="project-tech"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div><div class="project-footer"><span><i class="bi bi-person-badge"></i> Lead Programmer</span><span class="text-muted small">Capstone Project</span></div></div>
           </article></div>
           <div class="col-lg-4"><article class="project-card h-100">
             <div class="project-visual inventory-visual"><div class="inventory-art"><i class="bi bi-box-seam"></i><div class="inventory-bars"><span></span><span></span><span></span><span></span><span></span></div><div class="inventory-label">INVENTORY OVERVIEW</div></div><span class="project-type">DESKTOP SYSTEM</span></div>
-            <div class="project-body"><span class="project-number">PROJECT 02</span><h3>Watchupong Feeds Inventory Management System</h3><p>Built and designed an automated tracking framework to improve stock control, monitor supply levels, and reduce manual data-entry errors.</p><div class="project-tech"><span>C#</span><span>Microsoft SQL Server</span></div><div class="project-footer"><span><i class="bi bi-person-badge"></i> Lead Programmer</span><span class="text-muted small">Application Development</span></div></div>
+            <div class="project-body"><span class="project-number">PROJECT 02</span><h3>Watchupong Feeds Inventory Management System</h3><p>Built a desktop inventory system to track stock levels, maintain product records, and reduce manual data-entry errors. The application was designed to support more organized monitoring and retrieval of inventory information using C# and Microsoft SQL Server.</p><div class="project-tech"><span>C#</span><span>Microsoft SQL Server</span></div><div class="project-footer"><span><i class="bi bi-person-badge"></i> Lead Programmer</span><span class="text-muted small">Application Development</span></div></div>
           </article></div>
           <div class="col-lg-4"><article class="project-card h-100">
             <div class="project-visual manga-visual"><div class="manga-art"><div class="book book-one"></div><div class="book book-two"></div><div class="book book-three"></div><i class="bi bi-search"></i></div><span class="project-type">DESKTOP SYSTEM</span></div>
-            <div class="project-body"><span class="project-number">PROJECT 03</span><h3>Manga Management System</h3><p>Created a Windows desktop application for managing digital inventory, with search filters and local data storage.</p><div class="project-tech"><span>C#</span><span>Microsoft SQL Server</span></div><div class="project-footer"><span><i class="bi bi-person-badge"></i> Lead Programmer</span><span class="text-muted small">Desktop Application</span></div></div>
+            <div class="project-body"><span class="project-number">PROJECT 03</span><h3>Manga Management System</h3><p>Created a desktop application for cataloging titles and managing records with faster searching and organized data handling. I focused on the core development and data structure to support easier access and maintenance of stored information in C# with SQL Server.</p><div class="project-tech"><span>C#</span><span>Microsoft SQL Server</span></div><div class="project-footer"><span><i class="bi bi-person-badge"></i> Lead Programmer</span><span class="text-muted small">Desktop Application</span></div></div>
           </article></div>
         </div>
-        <p class="project-note mt-4"><i class="bi bi-info-circle me-1"></i> Project previews are illustrative. Add real screenshots and repository links when you are ready to share them.</p>
       </div>
     </section>
 
@@ -160,12 +167,12 @@
           <p>Recent courses and certificates included with my application materials.</p>
         </div>
         <div class="row g-3">
-          <div class="col-md-6 col-lg-3"><article class="certificate-card h-100"><div class="certificate-icon cyber"><i class="bi bi-shield-lock"></i></div><span class="certificate-date">OCT 07, 2026</span><h3>Cybersecurity</h3><p>Asian Development Bank Institute e-Learning</p><a class="certificate-link" href="assets/Cybersecurity-Certificate.pdf" target="_blank" rel="noopener">View Certificate <i class="bi bi-arrow-up-right"></i></a></article></div>
-          <div class="col-md-6 col-lg-3"><article class="certificate-card h-100"><div class="certificate-icon hardware"><i class="bi bi-cpu"></i></div><span class="certificate-date">SEP 28, 2026</span><h3>Computer Hardware Basics</h3><p>DICT-ITU DTC Initiative through Cisco Networking Academy</p><a class="certificate-link" href="assets/Computer-Hardware-Basics-Certificate.pdf" target="_blank" rel="noopener">View Certificate <i class="bi bi-arrow-up-right"></i></a></article></div>
-          <div class="col-md-6 col-lg-3"><article class="certificate-card h-100"><div class="certificate-icon os"><i class="bi bi-pc-display-horizontal"></i></div><span class="certificate-date">SEP 28, 2026</span><h3>Operating Systems Basics</h3><p>DICT-ITU DTC Initiative through Cisco Networking Academy</p><a class="certificate-link" href="assets/Operating-Systems-Basics-Certificate.pdf" target="_blank" rel="noopener">View Certificate <i class="bi bi-arrow-up-right"></i></a></article></div>
-          <div class="col-md-6 col-lg-3"><article class="certificate-card h-100"><div class="certificate-icon network"><i class="bi bi-router"></i></div><span class="certificate-date">SEP 29, 2026</span><h3>Networking Basics</h3><p>DICT-ITU DTC Initiative through Cisco Networking Academy</p><a class="certificate-link" href="assets/Networking-Basics-Certificate.pdf" target="_blank" rel="noopener">View Certificate <i class="bi bi-arrow-up-right"></i></a></article></div>
+          <div class="col-md-6 col-lg-3"><article class="certificate-card h-100"><div class="certificate-icon cyber"><i class="bi bi-shield-lock"></i></div><span class="certificate-date">OCT 07, 2026</span><h3>Cybersecurity</h3><p>Asian Development Bank Institute e-Learning</p><a class="certificate-link" href="assets/Cybersecurity_Certificate.pdf" target="_blank" rel="noopener">View Certificate <i class="bi bi-arrow-up-right"></i></a></article></div>
+          <div class="col-md-6 col-lg-3"><article class="certificate-card h-100"><div class="certificate-icon hardware"><i class="bi bi-cpu"></i></div><span class="certificate-date">SEP 28, 2026</span><h3>Computer Hardware Basics</h3><p>DICT-ITU DTC Initiative through Cisco Networking Academy</p><a class="certificate-link" href="assets/CHB_Certificate.pdf" target="_blank" rel="noopener">View Certificate <i class="bi bi-arrow-up-right"></i></a></article></div>
+          <div class="col-md-6 col-lg-3"><article class="certificate-card h-100"><div class="certificate-icon os"><i class="bi bi-pc-display-horizontal"></i></div><span class="certificate-date">SEP 28, 2026</span><h3>Operating Systems Basics</h3><p>DICT-ITU DTC Initiative through Cisco Networking Academy</p><a class="certificate-link" href="assets/OPS_Certificate.pdf" target="_blank" rel="noopener">View Certificate <i class="bi bi-arrow-up-right"></i></a></article></div>
+          <div class="col-md-6 col-lg-3"><article class="certificate-card h-100"><div class="certificate-icon network"><i class="bi bi-router"></i></div><span class="certificate-date">SEP 29, 2026</span><h3>Networking Basics</h3><p>DICT-ITU DTC Initiative through Cisco Networking Academy</p><a class="certificate-link" href="assets/NB_Certificate.pdf" target="_blank" rel="noopener">View Certificate <i class="bi bi-arrow-up-right"></i></a></article></div>
         </div>
-        <div class="seminar-strip mt-4"><div class="seminar-icon"><i class="bi bi-mortarboard"></i></div><div><h3>Seminars & School Activities</h3><p>National Career Fest (May 2026) · ICT Research Colloquium (November 2025 and January 2024) · Stress Tolerance and Management (October 2022)</p></div></div>
+        <div class="seminar-strip mt-4"><div class="seminar-icon"><i class="bi bi-mortarboard"></i></div><div><h3>Seminars & School Activities</h3><p>National Career Fest (May 2026), ICT Research Colloquium (November 2025 and January 2024), and Stress Tolerance and Management (October 2022).</p></div></div>
       </div>
     </section>
 
@@ -177,9 +184,9 @@
           <p>My academic background and practical experience.</p>
         </div>
         <div class="timeline">
-          <div class="timeline-item"><div class="timeline-marker"><i class="bi bi-building"></i></div><div class="timeline-card"><div class="timeline-meta"><span>FEBRUARY – MAY 2026</span><span class="timeline-pill">INTERNSHIP</span></div><h3>IT Intern</h3><h4>Municipality of Bulakan</h4><ul><li>Assisted in managing and maintaining information systems for employment services.</li><li>Provided technical support and digital layout assistance for workplace programs and events.</li><li>Handled data entry and record management for community employment programs.</li></ul></div></div>
-          <div class="timeline-item"><div class="timeline-marker"><i class="bi bi-mortarboard"></i></div><div class="timeline-card"><div class="timeline-meta"><span>2022 – 2026</span><span class="timeline-pill">EDUCATION</span></div><h3>Bachelor of Science in Information Technology</h3><h4>STI College Balagtas</h4><p>Completed a degree focused on information technology, systems, programming, and database concepts.</p></div></div>
-          <div class="timeline-item"><div class="timeline-marker"><i class="bi bi-people"></i></div><div class="timeline-card"><div class="timeline-meta"><span>2022 – 2026</span><span class="timeline-pill">ORGANIZATION</span></div><h3>Member — BIT Society Organization</h3><h4>STI College Balagtas</h4><p>Participated as a member of the college organization.</p></div></div>
+          <div class="timeline-item"><div class="timeline-marker"><i class="bi bi-building"></i></div><div class="timeline-card"><div class="timeline-meta"><span>FEBRUARY – MAY 2026</span><span class="timeline-pill">INTERNSHIP</span></div><h3>IT Intern</h3><h4>Municipality of Bulakan</h4><ul><li>Assisted in maintaining information systems used for employment services.</li><li>Provided technical support and helped prepare digital materials for workplace activities.</li><li>Handled data entry and records management for community employment programs.</li></ul></div></div>
+          <div class="timeline-item"><div class="timeline-marker"><i class="bi bi-mortarboard"></i></div><div class="timeline-card"><div class="timeline-meta"><span>2022 – 2026</span><span class="timeline-pill">EDUCATION</span></div><h3>Bachelor of Science in Information Technology</h3><h4>STI College Balagtas</h4><p>Completed coursework and projects focused on programming, systems, database management, and IT support.</p></div></div>
+          <div class="timeline-item"><div class="timeline-marker"><i class="bi bi-people"></i></div><div class="timeline-card"><div class="timeline-meta"><span>2022 – 2026</span><span class="timeline-pill">ORGANIZATION</span></div><h3>Member — BIT Society Organization</h3><h4>STI College Balagtas</h4><p>Participated in campus activities and professional development opportunities related to information technology.</p></div></div>
         </div>
       </div>
     </section>
@@ -190,7 +197,7 @@
           <div class="contact-decoration decor-one"></div><div class="contact-decoration decor-two"></div>
           <div class="row align-items-center gy-4 position-relative">
             <div class="col-lg-7"><span class="section-kicker light-kicker">LET'S CONNECT</span><h2>Ready for the next opportunity.</h2><p>I’m interested in entry-level opportunities where I can apply my programming, database, and IT support skills while continuing to grow professionally.</p></div>
-            <div class="col-lg-5"><div class="contact-actions"><a class="btn btn-light btn-lg" href="mailto:legaspi.neale@gmail.com"><i class="bi bi-envelope me-2"></i>legaspi.neale@gmail.com</a><a class="contact-phone" href="tel:+639204680363"><i class="bi bi-telephone me-2"></i>0920 468 0363</a><a class="contact-resume" href="assets/Neale-Legaspi-Resume.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-arrow-down me-2"></i>Open my resume (PDF)</a></div></div>
+            <div class="col-lg-5"><div class="contact-actions"><a class="contact-link contact-email" href="mailto:legaspi.neale@gmail.com" aria-label="Email Neale D. Legaspi" style="color: #fff;"><i class="bi bi-envelope"></i> legaspi.neale@gmail.com</a><a class="contact-link contact-phone" href="tel:+639204680363" aria-label="Call Neale D. Legaspi"><i class="bi bi-telephone"></i> 0920 468 0363</a><a class="contact-link contact-resume resume-link" href="assets/Neale-D-Legaspi-Resume.pdf" target="_blank" rel="noopener" aria-label="Open my resume PDF"><i class="bi bi-file-earmark-arrow-down"></i> Open My Resume (PDF)</a></div></div>
           </div>
         </div>
       </div>
@@ -200,7 +207,6 @@
   <footer class="site-footer">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
       <p class="mb-0">© <span id="currentYear"></span> Neale D. Legaspi. All rights reserved.</p>
-      <a href="#home">Back to top <i class="bi bi-arrow-up"></i></a>
     </div>
   </footer>
 

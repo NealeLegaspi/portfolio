@@ -2,7 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.navbar');
   const backToTop = document.getElementById('backToTop');
   const year = document.getElementById('currentYear');
+  const themeToggle = document.getElementById('themeToggle');
   if (year) year.textContent = new Date().getFullYear();
+
+  themeToggle?.addEventListener('click', () => {
+    const isDarkMode = document.body.classList.toggle('dark-mode');
+    themeToggle.setAttribute('aria-checked', String(isDarkMode));
+    themeToggle.title = `Switch to ${isDarkMode ? 'light' : 'dark'} mode`;
+    themeToggle.querySelector('i')?.classList.toggle('bi-moon-stars-fill', !isDarkMode);
+    themeToggle.querySelector('i')?.classList.toggle('bi-sun-fill', isDarkMode);
+  });
 
   const handleScroll = () => {
     const moved = window.scrollY > 30;
@@ -17,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Close the mobile navigation after choosing a section.
-  document.querySelectorAll('#navContent .nav-link, #navContent .btn').forEach(link => {
+  document.querySelectorAll('#navContent .nav-link, #navContent .btn, #themeToggle').forEach(link => {
     link.addEventListener('click', () => {
       const navContent = document.getElementById('navContent');
       if (navContent?.classList.contains('show') && window.bootstrap) {
